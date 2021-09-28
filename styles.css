@@ -1,0 +1,112 @@
+body {
+  background:#f7f7f7;
+  font-size:10px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase !important;
+}
+button {
+  user-select: none;
+  outline: 0!important;
+}
+h1 {
+  font-size:3rem;
+  color: #333 !important;
+  font-weight: 800;
+}
+
+.quiz progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 0.5rem;
+  margin:0.5rem 0 0.15rem 0;
+  border: none;
+  background: rgba(0,0,0,0.15);
+}
+
+.quiz progress::-webkit-progress-bar {
+  background-color: rgba(0,0,0,0.15);
+}
+
+.quiz progress::-webkit-progress-value {
+  background-color: rgba(0,0,0,0.5);
+  transition: all 1s ease;
+}
+
+.quiz progress::-moz-progress-bar {
+  background-color: rgba(0,0,0,0.25);
+}
+.quiz .progressData {
+  margin-bottom:1rem;
+  display:block;
+  font-size:1.15rem;
+  text-align:center;
+  font-weight:500;
+  color:rgba(0,0,0,0.5);
+}
+.card {
+  box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 0px;
+  border:none;
+  overflow: hidden;
+  background: #FFF;
+  cursor: normal;
+  transition: all 0.2;
+}
+
+/* Section Styles */
+.quiz {
+  margin-top:2rem;
+}
+.quiz .question {}
+.quiz .question.card {
+  padding:2rem;
+}
+.questionText {
+  font-size:2rem;
+  font-weight: 800;
+  color: #333;
+}
+.quiz .question .options {}
+.quiz .question .options button.quiz-opt {
+  display: block;
+  margin:1rem 0;
+  padding:.75rem 1.25rem;
+  border:1px solid #ccc;
+  font-size:1.15rem;
+  border-radius:0px;
+  text-align:left;
+  background: none;
+  outline:none;
+  color: #333;
+  text-transform: lowercase;
+  font-weight: 400;
+}
+.quiz .question .options button.quiz-opt.range {
+  display:inline-block;
+  margin-right:2rem;
+  position:relative;
+}
+.quiz .question .options button.quiz-opt.range:last-of-type {
+  margin-right:0;
+}
+.quiz .question .options button.quiz-opt:hover {
+  background:#67CB82;
+  cursor:pointer;
+  color: #fff;
+  transition: all .30s ease;
+}
+.quiz .question .options button.quiz-opt:focus {
+  background: #67CB82;
+  color:#fff;
+  transition-delay: 1s;
+  transition-property: background-color;
+  transition: all .30s ease;
+}
+
+@media (max-width: 700px) {
+  .quiz .question .options button.quiz-opt.range {
+    margin-right:1rem;
+    padding:1.5rem;
+}}
