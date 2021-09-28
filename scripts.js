@@ -1,3 +1,7 @@
+function goBack() {
+  window.history.back();
+}
+
 function quizInit() {
 
   // Selectors
@@ -38,13 +42,13 @@ function quizInit() {
       type: 'multiple',
       options: [{
         text: 'Black',
-        weight: 0
+        weight: 2
       }, {
         text: 'Colored',
         weight: 1
       }, {
         text: '1 colored and 1 black',
-        weight: 2
+        weight: 0
       }]
     },
   },{
@@ -53,16 +57,16 @@ function quizInit() {
       type: 'multiple',
       options: [{
         text: 'Clear',
-        weight: 1
+        weight: 3
       }, {
         text: 'Black',
         weight: 2
       }, {
         text: 'I can see a black line through the nail',
-        weight: 3
+        weight: 1
       },{
         text: 'Some are clear and some are not',
-        weight: 4
+        weight: 0
       }]
     },
   },{
@@ -71,16 +75,16 @@ function quizInit() {
       type: 'multiple',
       options: [{
         text: 'My dragon has a super smooth back and some spikes on the side',
-        weight: 1
+        weight: 3
       }, {
         text: 'My dragon has very orderly normal looking scales and spikes',
         weight: 2
       }, {
         text: 'My dragon has scales going every direction and a lot of spikes/scales appear circular',
-        weight: 3
+        weight: 1
       },{
         text: 'My dragon doesn’t have scales',
-        weight: 4
+        weight: 0
       }]
     },
   },{
@@ -89,16 +93,16 @@ function quizInit() {
       type: 'multiple',
       options: [{
         text: 'My dragon appeared almost transparent like',
-        weight: 1
+        weight: 3
       }, {
         text: 'Nothing I could notice, looked normal',
         weight: 2
       }, {
         text: 'My dragon was older when they came into my life',
-        weight: 3
+        weight: 1
       },{
         text: 'I don’t know',
-        weight: 4
+        weight: 0
       }]
     },
   },{
@@ -110,7 +114,7 @@ function quizInit() {
         weight: 1
       }, {
         text: 'No',
-        weight: 2
+        weight: 0
       }]
     },
   }];
@@ -199,3 +203,4 @@ function quizInit() {
 $(function() {
   quizInit();
 });
+
