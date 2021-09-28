@@ -131,6 +131,14 @@ function quizInit() {
     id: 4,
     text:'result 4 text',
     minScore:12
+  },{
+    id: 5,
+    text:'result 4 text',
+    minScore:12
+  },{
+    id: 6,
+    text:'result 4 text',
+    minScore:12
   }];
 
   // QUIZ ENGINE
@@ -179,7 +187,7 @@ function quizInit() {
 
     // RESULTS
     function calculateResults() {
-      $('.quiz .question').html('<p class="questionText">Quiz Complete Here are the Results!</p>');
+      $('.quiz .question').html('<p class="questionText">You Have A _______!</p>');
     }
   } // END quiz engine
 
