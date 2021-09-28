@@ -145,7 +145,7 @@ function quizInit() {
   function quiz() {
     var currentQuestion = 0; // default starting value
     var currentScore = 0; // default starting value
-    var answerLog = [] // for storing answers for Marketo
+    var answerLog = [] // for storing answers for quiz
     $quizProgress.attr("max", questions.length);
     $quizProgressDataLimit.html(questions.length);
     renderQuestion(currentQuestion);

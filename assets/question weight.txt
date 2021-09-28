@@ -1,0 +1,35 @@
+If Question 1 weight:
+5 = Zero
+4 = Witbilts
+3 = Normal
+2 = Wero
+1 = Paradox
+0 = Paradigm
+
+If Question 2 weight:
+2 = Normal
+1 = Translucent
+0 = Translucent
+
+If Question 3 weight:
+3 = Hypomelanistic
+2 = Normal
+1 = Normal
+0 = Normal
+
+If Question 4 weight:
+3 = Leatherback
+2 = Normal
+1 = Dunner
+0 = Silkback
+
+If Question 5 weight:
+3 = Translucent
+2 = Normal
+1 = NA
+0 = NA
+
+If Question 6 weight:
+1 = Genetic Stripe
+0 = NA
+
